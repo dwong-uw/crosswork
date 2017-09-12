@@ -74,11 +74,12 @@ A feature of crosswords that some people overlook is that the layout of them is 
 
 ## Other controls
 
-* **Undo** - ctrl+z
-* **Redo** - ctrl+shift+z
+* **Undo** - ctrl+Z
+* **Redo** - ctrl+shift+Z
 * **Save state** - shift+any number key
 * **Load state** - any number key
 * **Save to current slot** - ctrl+S
 * **Next/previous word** - tab
 * **Beginning/end of word** - home/end
+* **Delete letters in word that do not belong to a fully-locked word** - shift+del
 * **Change highlight orientation** - shift+up/down/left/right
