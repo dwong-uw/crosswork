@@ -26,7 +26,7 @@ public class CrossworkBoardState {
 		}
 	}
 	
-	public CrossworkBoardState (String stateString) {
+    public CrossworkBoardState(String stateString) {
 		boardSize = (int)Math.sqrt(stateString.length()/2);
 		board = new char[boardSize][boardSize];
 		state = new byte[boardSize][boardSize];
