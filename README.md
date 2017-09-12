@@ -18,7 +18,7 @@ Usage: Highlight a word, and press spacebar.
 
 Autocomplete was the obvious feature to provide myself. Given a word with some blanks and some fixed letters, I need to know what letters can validly go into the blanks and form a proper word.
 
-![Autocomplete](http:www.moonrabbitgames.net/misc/1.png)
+![Autocomplete](http://www.moonrabbitgames.net/misc/1.png)
 
 In this example, I want to know all the 4-letter words that will fit here whose second letter is A. I can scroll through my choices on the right, and preview them on the board as unlocked letters. BAFT might not be a good choice here, because it will be tough finding a 4-letter word that ends in "FP", so this previewing makes it easy to see that BAFT is a poor choice.
 
@@ -30,7 +30,7 @@ Usage: Highlight a square, and press "?" (i.e. shift+slash)
 
 Sometimes I wanted to know which letters could go into a square, and still provide valid words for the row and column it resides in.
 
-![Autocomplete](http:www.moonrabbitgames.net/misc/2.png)
+![Single-letter queries](http://www.moonrabbitgames.net/misc/2.png)
 
 In this example, I'm curious what letter can go after this T, without shooting myself in the foot for the downwards word ending in P. Maybe I'm thinking about what vowel will fit in nicely; can I put in the word "TEA"? After the query, it looks like not-- the only vowel I can put is A, which indicates that any other vowel I put in will lead to zero valid words in the downwards direction (i.e. no 4-letter English words that start with E and end in P). In fact, my choices for the second letter of this across word is quite limited, so this makes it easy to decide.
 
@@ -40,7 +40,7 @@ Usage: Press INSERT while autocomplete list is populated, or press shift+space i
 
 This is more or less a combination of the two above ideas; what words can I put here that follow the given constraints, but also provide valid letter placements for its perpendicular neighbors?
 
-![Autocomplete](http:www.moonrabbitgames.net/misc/3.png)
+![Autosuggest](http://www.moonrabbitgames.net/misc/3.png)
 
 I needed a 3-letter word here that started with "T", and first thought of words like "TEA", "TOE", and "THE". As mentioned above, doing a single-letter query on the second square showed me that "TEA" and "TOE" were invalid placements, since "E" or "O" in the second square wouldn't yield any valid English words going in the downwards direction. So why suggest them at all in the autocomplete?
 
@@ -52,7 +52,7 @@ Usage: Click on the text box below the autocomplete list, and type in a query, u
 
 Before I made Crosswork, I would use regex-like utilities online to see what words I can make with certain restrictions. This is still necessary even with Crosswork, as sometimes I want to place multi-word clues "METOO", and "ATTHETIME" in the example puzzle provided.
 
-![Autocomplete](http:www.moonrabbitgames.net/misc/4.png)
+![Console queries](http://www.moonrabbitgames.net/misc/4.png)
 
 In this example, I'm considering breaking this 9-letter word going across into a 4-letter word and a 5-letter word. To see if this is viable, I want to see what words I can make with "RA__N", but Crosswork will only suggest 9-letter words to me here using autocomplete and autosuggest. So I type in the query by hand in the mini-console. The suggestion "RAMEN" makes me wonder if I can find a clue to the solution "WARMRAMEN"... maybe "Japanese comfort food perfect for a cold, winter day"?
 
@@ -60,7 +60,7 @@ In this example, I'm considering breaking this 9-letter word going across into a
 
 Usage: Press F5 to toggle
 
-![Autocomplete](http:www.moonrabbitgames.net/misc/5.png)
+![Display numbers](http://www.moonrabbitgames.net/misc/5.png)
 
 When I was using Crosswork, I was using it just as a tool for creating the answer key-- I still used Excel to create the final product, as it was more flexible layout-wise, and I could also work on them in the office. It's really easy to make mistakes while doing the numbering by hand, and if you miss the numbering for one square, then you have to redo all the numbers after it. I decided to implement the algorithm in Crosswork to use it to guide my numbering, but also it leaves room in the future for me to implement clue-construction in Crosswork as well, making it a full crossword-making utility.
 
@@ -68,7 +68,7 @@ When I was using Crosswork, I was using it just as a tool for creating the answe
 
 Usage: Press F6 to toggle
 
-![Autocomplete](http:www.moonrabbitgames.net/misc/6.png)
+![Construction mode](http://www.moonrabbitgames.net/misc/6.png)
 
 A feature of crosswords that some people overlook is that the layout of them is symmetrical along the diagonal axes. Crosswork enforces that symmetry in its construction mode, which again, helps prevent construction mistakes.
 
